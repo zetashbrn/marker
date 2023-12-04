@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500&family=Poppins:wght@100;200;300&display=swap');
+
+body{
+    min-height: 100%;
+    background: linear-gradient(180deg, #172750 11.96%, rgba(51, 51, 51, 0) 158.03%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.permulaan img{
+    width: 100%;
+    opacity: 0.7;
+}
+  
+.welcomeText {
+   position: absolute;
+   top: 50%;
+   left: 10%;
+   z-index: 1;
+}
+
+.welcomeText h1{
+    font-size: 45px;
+    font-family: 'palanquin', sans-serif;
+    color: #FFFFFF;
+    line-height: 65px;
+    letter-spacing: 1px;
+}
+
+.serviceTXT{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.serviceTXT h1{
+    background: #484697;
+    opacity: 0.8;
+    box-shadow: inset 0px 5px 8px rgba(0, 0, 0, 0.4);  
+    border-radius: 20px;
+    padding: 12px 120px;
+    border: 1px solid;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: 'palanquin', sans-serif;
+    padding: 1% 0% 1% 0%;
+    margin-left: 34%;
+    margin-right: 34%;
+    border: none;
+}
+
+.services {
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+.offers img{
+    height: 320.4px;
+    width: 207.77px;
+}
+
+.serviceIMG {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 0.5%;
+}
+
+.offers{
+    width: 18%;
+    margin: 0 auto 0 auto;
+    cursor: pointer;
+}
+  
+.offers:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.gbrExplore{
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
+.gbrFreelancer{
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
+.balok .judul{
+    position: absolute;
+    margin-top: -38%;
+    margin-left: 10%;
+    font-size: 40px;
+    font-family: 'palanquin', sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.judul span{
+    color: #4D0072;
+    -webkit-text-stroke: 0.5px #FFFFFF;
+}
+
+.text-button{
+    margin-top: -25%;
+    margin-left: 8.5%;
+    position: absolute;
+    width: 40%;
+    padding-right: 10%;
+    font-family: 'palanquin', sans-serif;
+    display: block;
+    text-align: center;
+}
+
+.text-button a.button{
+    padding: 1.5% 6% 1.5% 6%;
+    /* border: 1px solid #121212; */
+    display: block;
+    box-shadow: inset 0px 5px 8px rgba(0, 0, 0, 0.4);  
+}
+
+.button{
+    text-decoration: none;
+}
+
+a.button{
+    font-size: 30px;
+    color: #4D4E93;
+    background: #D9D9D9;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+#tbl-2{
+    margin-top: -19%;
+}
+
+#tbl-2 a.button{
+    color: #FFFFFF;
+    background: #484697;
+}

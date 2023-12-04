@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500&family=Poppins:wght@100;200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+}
+
+body{
+    min-height: 100%;
+    background: linear-gradient(180deg, #172750 11.96%, rgba(51, 51, 51, 0) 158.03%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.requestbox{
+    font-family: 'poppins', sans-serif;
+    margin-top: 13%;
+    margin-left: 5%;
+    border: 2px solid #0d7114;
+    background-color: #fff;
+    width: 18%;
+    height: 200px;
+}
+
+.requestbox p{
+    font-size: 16px;
+    margin: 10% 7% 10% 7%;
+    line-height: 28px;
+}
+
+.requestbutton{
+    border: 2px solid #000000;
+    text-align: center;
+    border-radius: 15px;
+    margin: 5% 23% 5% 13%;
+    padding: 3% 0px;
+}
+
+.requestbutton a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+}
+
+.slider{
+    margin: 7.5% 5.5% 7.5% 5.5%;
+    overflow: hidden;
+    height: 200px;
+    width: 75%;
+    position: relative;
+    margin-top: 13%;
+    margin-left: 3%;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.navigation-manual{
+    position: relative;
+    width: auto;
+    margin-top: -40px;
+    display: flex;
+    justify-content: left;
+    margin-left: 3.5%;
+}
+
+.manual-btn{
+    background-color: #FFFFFF;
+    opacity: 0.3;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background: #FFFFFF;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 18.1%;
+    margin-left: 3.5%;
+    display: none;
+}
+
+.navigation-auto div{
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #FFFFFF;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #FFFFFF;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #FFFFFF;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #FFFFFF;
+}
+
+.title1{
+    text-align: center;
+    margin-top: -4%;
+}
+
+.title1 h1{
+    background: #484697;
+    opacity: 0.8;
+    box-shadow: inset 0px 5px 8px rgba(0, 0, 0, 0.4);  
+    border-radius: 20px;
+    padding: 12px 120px;
+    border: 1px solid;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: 'palanquin', sans-serif;
+    padding: 1% 0% 1% 0%;
+    margin-left: 33%;
+    margin-right: 33%;
+    border: none;
+}
+
+#gambar2{
+    margin-left: 2.5%;
+}
+
+.cover{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+}
+
+.slide1{
+    width: 100%;
+    height: 100%;
+}
+
+.slider1{
+    display: flex;
+    height: 320px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider1 .imagecontainer1{
+    width: 200%;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+    display: flex;
+}
+
+.button1{
+    position: absolute;
+    margin-top: 5.5%;
+    width: 100%;
+}
+
+.bxs-chevron-left{
+    font-size: 41px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.bxs-chevron-right{
+    position: absolute;
+    font-size: 41px;
+    margin-left: 95.5%;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.bxs-chevron-left:hover{
+    border: 2px solid #000000;
+}
+
+.bxs-chevron-right:hover{
+    border: 2px solid #000000;
+}
+
+#slide-1{
+    position: absolute;
+    margin-top: -17.5%;
+}
+
+#slide-2{
+    position: absolute;
+    margin-top: -17.5%;
+}
+
+#slide-3{
+    position: absolute;
+    margin-top: -17.5%;
+}
+
+#slide-4{
+    position: absolute;
+    margin-top: -17.5%;
+}
+
+#slide-5{
+    position: absolute;
+    margin-top: -17.5%;
+}
+
+#slide-6{
+    position: absolute;
+    margin-top: -17.5%;
+}
+
+#slide-1:target ~ .imagecontainer1{
+    left: 0;
+}
+
+#slide-2:target ~ .imagecontainer1{
+    left: -102.5%;
+}
+
+#slide-3:target ~ .imagecontainer1{
+    left: 0;
+}
+
+#slide-4:target ~ .imagecontainer1{
+    left: -102.5%;
+}
+
+#slide-5:target ~ .imagecontainer1{
+    left: 0;
+}
+
+#slide-6:target ~ .imagecontainer1{
+    left: -102.5%;
+}
+
+.title2{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.title2 h1{
+    background: #B9CEE2;
+    opacity: 0.8;
+    box-shadow: inset 0px 5px 8px rgba(0, 0, 0, 0.4);  
+    border-radius: 20px;
+    padding: 12px 120px;
+    border: 1px solid;
+    color: #484697;
+    font-size: 30px;
+    font-family: 'palanquin', sans-serif;
+    padding: 1% 0% 1% 0%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: none;
+}
+
+.title3{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.title3 h1{
+    background: #E5E5E5;
+    opacity: 0.8;
+    box-shadow: inset 0px 5px 8px rgba(0, 0, 0, 0.4);  
+    border-radius: 20px;
+    padding: 12px 120px;
+    border: 1px solid;
+    color: #484697;
+    font-size: 30px;
+    font-family: 'palanquin', sans-serif;
+    padding: 1% 0% 1% 0%;
+    margin-left: 38%;
+    margin-right: 38%;
+    border: none;
+}
+
+#akhir{
+    margin-bottom: 4%;
+}

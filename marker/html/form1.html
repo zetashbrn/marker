@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styleForm.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <p class="logo">Marker.</p>
+        <nav>
+            <div class="wraps">
+                <div class="bx bx-menu" id="menu-icon">
+                    <ul class="drop-down-menu">
+                        <li class="spesial">Category</li>
+                        <li class="normal"><a href="#">Graphics & Design <img src="../assets/arrow.png"></a></li>
+                        <li class="normal"><a href="#">Digital Marketing <img src="../assets/arrow.png"></a></li>
+                        <li class="normal"><a href="#">Writing & Translation <img src="../assets/arrow.png"></a></li>
+                        <li class="normal"><a href="#">Video & Animation <img src="../assets/arrow.png"></a></li>
+                        <li class="normal"><a href="#">Music & Audio <img src="../assets/arrow.png"></a></li>
+                        <li class="normal"><a href="#">Programming & Tech <img src="../assets/arrow.png"></a></li>
+                        <li class="normal"><a href="#">Business <img src="../assets/arrow.png"></a></li>
+                        <li class="normal"><a href="#">Lifestyle <img src="../assets/arrow.png"></a></li>
+                        <li class="normal" id="normal-edit"><a href="#">Trending <img src="../assets/arrow.png"></a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder=" SEARCH" class="format">
+                    <i class='bx bx-search-alt-2'></i>
+                    <ul class="drop-down">
+                        <li><a href="#"><span class="nama-dd" id="nama-dd-edit1">Create a custom 2D...</span><span class="kanan1">&times;</span></a></li>
+                        <li><a href="#"><span class="nama-dd">Create a special...</span><span class="kanan2">&times;</span></a></li>
+                        <li><a href="#"><span class="nama-dd">Create a new...</span><span class="kanan3">&times;</span></a></li>
+                        <li><a href="#"><span class="nama-dd" id="nama-dd-edit">Recommended for...</span><span class="kanan4">&times;</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav-links" id="navbar">
+                <li><a href="../html/home.html">HOME</a></li>
+                <li>
+                    <a href="#clickz" class="click" id="clickz">NOTIFICATION [0]</a>
+                    <div class="popup">
+                        <div class="triangle"></div>
+                        <div class="kotaktengah">
+                            <div class="kotak"></div>
+                            <div class="kotak2"></div>
+                        </div>
+                        <div class="msg">
+                            <img src="../assets/notif.png" alt="">
+                            <p><span>Message from User</span> 
+                                <br>
+                                09 April 2022, 13:41
+                            </p>
+                        </div>
+                        <div class="msg">
+                            <img src="../assets/notif.png" alt="">
+                            <p><span>Message from User</span> 
+                                <br>
+                                11 April 2022, 21:37
+                            </p>
+                        </div>
+                        <p class="text2">View All</p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#clickzz" class="click2" id="clickzz">ORDERS [0]</a>
+                    <div class="popup2">
+                        <div class="triangle"></div>
+                        <img src="../assets/orders.png" alt="">
+                        <p class="text1">Oops! you haven't made an order</p>
+                        <p class="text2">Order Services Now!</p>
+                    </div>
+                </li>
+                <li><a href="../html/createList.html">LISTS</a></li>
+            </ul>
+            <a href="../html/signUp.html"><div class="gbr-user">
+                <img src="../assets/user.png">
+            </div></a>
+        </nav>
+    </header>
+    
+    <div class="section">
+        <h1>What Service Are You Looking For?</h1>
+        <h4>Describe the service you're looking to purchase - please be as detailed as possible:</h4>
+        <form action="form2.html">
+            <textarea name="" id="text1" cols="30" rows="7" placeholder="I'm looking for..." required></textarea>
+            <div class="wrap">
+                <label for="inputFile" class="inputFile">
+                    Attach Files <img src="../assets/papperclip.png" alt="">
+                    <input type="file" class="none" id="inputFile"><br>
+                </label>
+            </div>
+            <label class="category" for="category">Choose A Category</label><br>
+            <select id="category" name="category">
+                <option class="pertama" id="categorys">Select</option>
+                <option>Graphics & Design</option>
+                <option>Digital Marketing</option>
+                <option>Writing & Translation</option>
+                <option>Video & Animations</option>
+                <option>Music & Audio</option>
+                <option>Programming & Tech</option>
+                <option>Business</option>
+                <option>Lifestyle</option>
+                <option>Trending</option>
+            </select><br>
+            <label for="budget">What is your budget for this service?</label><br>
+            <input class="rp" type="number" name="budget" id="budget" placeholder="Rp" required><br>
+            <label for="date">When would you like your service delivered?</label><br>
+            <input type="date" name="date" id="date" required><br>
+            <button type="submit" id="submit" onclick="validasiForm()">Submit Request</button>
+        </form>
+    </div>
+
+    <footer id="kaki-web">
+        <div class="wrap">
+            <div class="footers">
+                <div class="footer-section">
+                    <h3 class="footer-title">About Us</h3>
+                    <a href="#kaki-web" class="pencet-1">Carrers</a>
+                    <a href="#kaki-web" class="pencet1">Press & News</a>
+                    <a href="#kaki-web" class="pencet1">Partnerships</a>
+                    <a href="#kaki-web" class="pencet1">Privacy Policy</a>
+                    <a href="#kaki-web" class="pencet1">Terms of Service</a>
+                    <a href="#kaki-web" class="pencet1">Intellectual Property</a>
+                    <a href="#kaki-web" class="pencet1">Claims</a>
+                    <a href="#kaki-web" class="pencet1">Investor Relations</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Community</h3>
+                    <a href="#kaki-web" class="pencet-1">Events</a>
+                    <a href="#kaki-web" class="pencet1">Blog</a>
+                    <a href="#kaki-web" class="pencet1">Forum</a>
+                    <a href="#kaki-web" class="pencet1">Community Standards</a>
+                    <a href="#kaki-web" class="pencet1">Podcast</a>
+                    <a href="#kaki-web" class="pencet1">Affiliates</a>
+                    <a href="#kaki-web" class="pencet1">Invite a Friend</a>
+                    <a href="#kaki-web" class="pencet1">Become a Seller</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <img src="../assets/location.png" class="atur1"><a href="#kaki-web" class="pencet-1" id="ctc1"><span>Kav 21, Alam Sutera Jalan Jalur Sutera <br> Barat Panunggangan Timur, RT.001/ RW.004, Panunggangan, Kec. Pinang, Kota Tangerang, Banten 15143</span></a>
+                    <img src="../assets/mail.png" class="atur2"><a href="#kaki-web" class="pencet1" id="ctc"><span> markerHCI@gmail.com</span></a>
+                    <img src="../assets/phone.png" class="atur3"><a href="#kaki-web" class="pencet1" id="ctc"><span> +6282178645672</span></a>
+                    <img src="../assets/instagram.png" class="atur4"><a href="#kaki-web" class="pencet1" id="ctc"><span>@marker_HCI</span></a>
+                </div>
+            </div>
+        </div>
+        <button id="BTN"><img src="../assets/chat.png" class="chat"></button>
+
+        <div id="MDL" class="KLM">
+
+            <div class="KLM-content">
+                <span class="TUTUP"><img src="../assets/back.png"></span>
+                <span class="chat-box"><img src="../assets/chatbox.png"></span>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/validasiForm.js"></script>
+    <script src="../JS/box.js"></script>
+    <script src="../JS/popup.js"></script>
+</body>
+</html>

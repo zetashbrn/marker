@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    background: #ECECEC;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section{
+    background-image: url("../assets/background.png");
+    padding: 5%;
+    padding-top: 15%;
+    display: flex;
+    font-family: 'palanquin', sans-serif;
+}
+
+form{
+    width: 100%;
+    padding: none;
+}
+
+::placeholder{
+    font-family: 'palanquin', sans-serif;
+}
+
+.card{
+    width: 65%;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+    box-shadow: inset 0px 5px 8px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(5px 10px 15px #121F40);
+    font-family: 'palanquin', sans-serif;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+    background: #92aef6bd;
+    color: #FFFF;
+    transition: all 0.3s ease-in-out;
+}
+
+.card .h1SignIn{
+    margin-bottom: 10%;
+}
+
+.card > input{
+    width: 80%;
+    border-radius: 10px;
+    padding: 3%;
+    border: none;
+    margin-top: 8%;
+    box-shadow: 5px 5px 20px #2F467E;
+}
+
+.card .konten{
+    margin-top: 5%;
+}
+
+.card .konten label{
+    font-size: 12px;
+}
+
+.card .konten label span{
+    font-weight: 900;
+}
+
+.card button{
+    border-radius: 20px;
+    padding: 2%;
+    width: 50%;
+    font-weight: 800;
+    border: none;
+    background: rgba(72, 70, 151, 0.8);
+    color: #FFFF;
+    filter: drop-shadow(0px 4px 15px #121F40);
+}
+
+.card button:hover{
+    transform: scale(1.05);
+    transform: translateY(-2px);
+    background: #ECECEC;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.login{
+    margin-top: 20%;
+    font-family: 'palanquin', sans-serif;
+}
+
+.create{
+    margin-top: 10%;
+    font-family: 'palanquin', sans-serif;
+}
+
+.logo{
+    padding-bottom: 0;
+}

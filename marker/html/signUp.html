@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styleSignUp.css">
+</head>
+<body>
+    <header>
+        <p class="logo">Marker.</p>
+    </header>
+
+    <div class="section">
+        <form action="" method="post">
+            <div class="card">
+                <h1 class="h1SignIn">Sign In</h1>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <div class="konten">
+                    <input type="checkbox" id="term">
+                    <label for="">Remember me</label>
+                </div>
+                <button id="masuk" class="login" type="button" onclick="ValidasiDataSignIn()">Login</button>
+            </div>
+        </form> 
+        <form action="" method="post">
+            <div class="card">
+                <h1 class="h1SignUp">Sign Up</h1>
+                <input type="text" name="name1" id="name1" placeholder="Name" required>
+                <input type="email" name="email1" id="email1" placeholder="Email" required>
+                <input type="password" name="password1" id="password1" placeholder="Password" required>
+                <div class="konten">
+                    <input type="checkbox" id="term1" required>
+                    <label for="">I read and agree to <span>TERMS & CONDITIONS</span></label>
+                </div>
+                <button id="masuk" class="create" type="button" onclick="ValidasiDataSignUp()">Create Account</button>
+            </div>
+        </form>
+    </div>
+
+    <footer id="kaki-web">
+        <div class="wrap">
+            <div class="footers">
+                <div class="footer-section">
+                    <h3 class="footer-title">About Us</h3>
+                    <a href="#kaki-web" class="pencet-1">Carrers</a>
+                    <a href="#kaki-web" class="pencet1">Press & News</a>
+                    <a href="#kaki-web" class="pencet1">Partnerships</a>
+                    <a href="#kaki-web" class="pencet1">Privacy Policy</a>
+                    <a href="#kaki-web" class="pencet1">Terms of Service</a>
+                    <a href="#kaki-web" class="pencet1">Intellectual Property</a>
+                    <a href="#kaki-web" class="pencet1">Claims</a>
+                    <a href="#kaki-web" class="pencet1">Investor Relations</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Community</h3>
+                    <a href="#kaki-web" class="pencet-1">Events</a>
+                    <a href="#kaki-web" class="pencet1">Blog</a>
+                    <a href="#kaki-web" class="pencet1">Forum</a>
+                    <a href="#kaki-web" class="pencet1">Community Standards</a>
+                    <a href="#kaki-web" class="pencet1">Podcast</a>
+                    <a href="#kaki-web" class="pencet1">Affiliates</a>
+                    <a href="#kaki-web" class="pencet1">Invite a Friend</a>
+                    <a href="#kaki-web" class="pencet1">Become a Seller</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <img src="../assets/location.png" class="atur1"><a href="#kaki-web" class="pencet-1" id="ctc1"><span>Kav 21, Alam Sutera Jalan Jalur Sutera <br> Barat Panunggangan Timur, RT.001/ RW.004, Panunggangan, Kec. Pinang, Kota Tangerang, Banten 15143</span></a>
+                    <img src="../assets/mail.png" class="atur2"><a href="#kaki-web" class="pencet1" id="ctc"><span> markerHCI@gmail.com</span></a>
+                    <img src="../assets/phone.png" class="atur3"><a href="#kaki-web" class="pencet1" id="ctc"><span> +6282178645672</span></a>
+                    <img src="../assets/instagram.png" class="atur4"><a href="#kaki-web" class="pencet1" id="ctc"><span>@marker_HCI</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/validasi.js"></script>
+</body>
+</html>
