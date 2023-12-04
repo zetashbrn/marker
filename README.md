@@ -1,4 +1,4 @@
-# marker
+# Marker
 Marker is a website that provides freelance services in various fields, such as graphic design, writing, translation, marketing, web development, and more. Marker gives freelancers the opportunity to offer their services to individuals and companies who need their services. This website is a recreate of the fiverr website, the final goal of this project development is a simplified fiverr.com website.
 
 Here's how the website looks like:
